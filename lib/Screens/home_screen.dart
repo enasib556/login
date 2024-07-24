@@ -45,6 +45,7 @@ class HomeScreen extends StatelessWidget {
       ),
       body: Center(
         child: Container(
+          
           color: Colors.transparent,
           width: 800,
           height: 550,
@@ -72,7 +73,7 @@ class HomeScreen extends StatelessWidget {
 
   Widget _buildSportCard(BuildContext context, String sportName, String imagePath) {
     return Card(
-      color: Color(0xff222421),
+      color: Color.fromARGB(255, 88, 156, 82),
       elevation: 4.0,
       margin: EdgeInsets.only(top: 20),
       child: Column(
@@ -86,7 +87,7 @@ class HomeScreen extends StatelessWidget {
               );
             },
             child: CircleAvatar(
-              radius: 70,
+              radius: 60,
               backgroundImage: AssetImage(imagePath),
             ),
           ),
